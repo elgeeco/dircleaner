@@ -1,6 +1,6 @@
 {
   "name": "dircleaner",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "clean up a directory",
   "main": "index.js",
   "scripts": {
@@ -8,4 +8,9 @@
   },
   "author": "",
   "license": "ISC"
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/elgeeco/dircleaner.git"
+  }, 
+  
 }
