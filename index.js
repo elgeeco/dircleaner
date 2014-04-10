@@ -23,10 +23,14 @@ function _deleteFolderRecursive(dirpath) {
 };
 
 
-exports.clean = function(dirpath){
+exports.clean = function(dirpath, makedir){
     
+	makedir = makedir || false;
+	
 	_deleteFolderRecursive(dirpath);
-
+	
+	if( !makedir) return;
+	
     if(!fs.existsSync( dirpath )){
         fs.mkdirSync(dirpath,  function(err){
             if(err) return console.log(err.message);
